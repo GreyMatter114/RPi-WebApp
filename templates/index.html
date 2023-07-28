@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raspberry Pi Camera Control Panel</title>
+    <script>
+        document.onkeydown = function (e) {
+            e = e || window.event;
+            switch (e.key) {
+                case 'ArrowUp':
+                    window.location.href = '/video_feed';
+                    break;
+                case 'ArrowDown':
+                    // Implement your down direction logic here
+                    break;
+                case 'ArrowLeft':
+                    // Implement your left direction logic here
+                    break;
+                case 'ArrowRight':
+                    // Implement your right direction logic here
+                    break;
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Raspberry Pi Camera Control Panel</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+</body>
+</html>
